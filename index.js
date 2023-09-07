@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const program = require('commander');
+import { program } from 'commander';
 
-const { askQuestion } = require('./askQuestion');
+import { askQuestion } from './askQuestion/index.js';
 
 program.version('1.0.0');
 

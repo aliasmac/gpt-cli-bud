@@ -1,4 +1,4 @@
-const { Command } = require('commander');
+import { Command } from 'commander';
 
 const askQuestionCallback = async (question) => {
   console.log('question', question);
@@ -12,4 +12,4 @@ const command = new Command()
     askQuestionCallback(question);
   });
 
-module.exports = { askQuestion: command };
+export const askQuestion = command;
