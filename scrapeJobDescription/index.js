@@ -65,16 +65,6 @@ const getJobDescriptionFromUrl = async (url) => {
   const { response } = await ChatGPT.sendMessage(messageToSend);
 
   console.log(response);
-
-  // console.log('jobDesc', jobDesc);
-
-  // I need to parse the different fields
-  // strip tags from values
-  // save back to array
-  // add to jobDescriptionString
-  // console.log('jobDescriptionKeys', jobDescriptionKeys);
-  // console.log(JSON.stringify(parsedJobDescription, null, 4));
-  // console.log('jobDescription', jobDescription);
 };
 
 const command = new Command()
