@@ -1,5 +1,5 @@
-class ChatGPT {}
+import { ChatGPTClient } from '@waylaidwanderer/chatgpt-api';
+import dotenv from 'dotenv';
+dotenv.config();
 
-module.exports = {
-  ChatGPT: new ChatGPT(),
-};
+export const ChatGPT = new ChatGPTClient(process.env.GPT_CLI_API_KEY);
